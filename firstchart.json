@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ 
+  "title": {"text": "GDP Per Capita"},
+ 
+  "width": 600,
+  "height": 500,
+   
+  "data": {
+    "values": [
+        {"Country": "Albania","GDP per capita": 6492},
+        {"Country": "Macedonia.","GDP per capita": 6694},
+        {"Country": "UK","GDP per capita": 54929},
+        {"Country": "India","GDP per capita": 8400},
+        {"Country": "Nigeria","GDP per capita": 5862},
+        {"Country": "USA","GDP per capita": 76329}]
+  },
+ 
+  "mark": {
+    "type": "bar",
+    "color": "orangered"},
+ 
+  "encoding": {
+    "x": {"field": "Country"},  
+ 
+    "y": {
+      "field": "GDP per capita",
+      "type": "quantitative"}}
+}
+ 
+  
